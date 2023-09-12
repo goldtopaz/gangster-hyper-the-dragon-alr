@@ -945,6 +945,12 @@
         "tilemapTile": true,
         "displayName": "myTile20"
     },
+    "tile2": {
+        "data": "hwQQABAAAAAAAAD//w8A8AAAAJ/J/AD/AADwabbL//MAAJ+G2L088wDwYhgR0TvzAC+EERERPQ/wQhMRERH9AC80FRERET0P8EITERERXfMAL4QRERFd8wDwYhgR0TvzAACfhhG9PPMAAPBp2Ms/8wAAAJ+2/PDzAAAAn8kPAP8AAAD//wAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile0"
+    },
     "level30": {
         "id": "level30",
         "mimeType": "application/mkcd-tilemap",
@@ -1104,7 +1110,8 @@
             "myTiles.tile37",
             "myTiles.tile160",
             "myTiles.tile27",
-            "myTiles.tile28"
+            "myTiles.tile28",
+            "myTiles.tile2"
         ],
         "displayName": "crystal tundra"
     },

@@ -1454,7 +1454,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile113`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
-        info.changeScoreBy(50)
+        info.changeScoreBy(30)
         tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
         tiles.setTileAt(location, assets.tile`transparency8`)
         music.play(music.stringPlayable("C5 F D B A C G A ", 500), music.PlaybackMode.InBackground)
@@ -2522,7 +2522,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`radient shard1`, function (sp
 statusbars.onZero(StatusBarKind.Health, function (status) {
     color.startFade(color.Black, color.originalPalette, 2000)
     _2014nostalgia = false
-    controller.moveSprite(Hyper_the_dragon, 130, 0)
+    controller.moveSprite(Hyper_the_dragon, 150, 0)
     effects.clearParticles(Hyper_the_dragon)
     Hyper_the_dragon.ay = 100
     tiles.placeOnRandomTile(Hyper_the_dragon, assets.tile`myTile36`)
@@ -2535,6 +2535,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, 
     Hyper_the_dragon.setPosition(20, 199)
     statusbar.value += -150
     color.startFade(color.GrayScale, color.originalPalette)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        music.play(music.stringPlayable("F - G B C - B - ", 500), music.PlaybackMode.InBackground)
+        Hyper_the_dragon.startEffect(effects.hearts, 500)
+        statusbar.value += 25
+        info.changeScoreBy(10)
+    }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -2748,7 +2758,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, 
         tiles.setTileAt(location, assets.tile`transparency8`)
         effects.clearParticles(Hyper_the_dragon)
         music.play(music.stringPlayable("E D G E A E G E ", 500), music.PlaybackMode.InBackground)
-        statusbar.value += 25
         Hyper_the_dragon.startEffect(effects.rings)
         _2014nostalgia = true
     }
@@ -2851,6 +2860,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile64`, function (sprite, 
         effects.clearParticles(Hyper_the_dragon)
         music.play(music.stringPlayable("F - G B A - B - ", 500), music.PlaybackMode.InBackground)
         Hyper_the_dragon.startEffect(effects.warmRadial)
+        Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = true
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
@@ -2916,12 +2926,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
             statusbar.value = 1e+24
             statusbar.value = 1e+29
             music.play(music.createSong(hex`00c80004080b0200001c00010a006400f401640000040000000000000000000000000005000004fd0100000400011e04000800012208000c00011e0c001000012210001400011e14001800012218001c0001251c002000012220002400011e24002800012228002c00011e2c003000012230003400011e38003c00011e3c004000012240004400011e44004800011948004c0001204c005000011950005400011e54005800011b58005c00011e5c006000011d60006400011964006800021d2768006c000222276c007000021e2770007400021b2774007800021d2778007c0001197c008000021e2780008400021e278400880002222788008c00011e8c009000012290009400011e94009800012298009c0001259c00a0000122a000a400011ea400a80002222aa800ac00021e29ac00b00002222ab000b400021e29b800bc00021e2cbc00c0000122c000c400021e29c400c80002192ac800cc00022029cc00d00002192ad000d400021e29d400d800021b2cd800dc00021e29dc00e000021d2ae000e40002192ae400e800021d2ae800ec0002222aec00f000021e2af000f400021b2af400f800021d2af800fc00021929fc000001021e2a04010801011908010c01011d0c011001012010011401010614011801011918011c01011b20012401011924012801011b28012c01011d2c013001012034013801012538013c0101203c014001011d44014801012448014c01012a4c01500101275401580101275c016001012701001c000f05001202c102c20100040500280000006400280003140006020004e40004000800011b0c001000011914001800011b18001c0001181c002000011b2400280001192c003000011b34003800011838003c0001143c004000011940004400011848004c0001165000540001185c00600001186c007000011470007400011974007800011478007c0001187c008000011684008800011b8c009000011994009800011b98009c0001189c00a000011ba400a8000119ac00b000011bb400b8000118b800bc000114bc00c0000119c000c4000118c800cc000116d000d4000118dc00e0000118ec00f0000114f000f4000119f400f8000114f800fc000118fc0000010116`), music.PlaybackMode.InBackground)
+            controller.moveSprite(Hyper_the_dragon, 300, 0)
         })
         timer.after(13000, function () {
             statusbar.value = 25
             statusbar.max = 750
             statusbar.setColor(7, 2)
             effects.clearParticles(Hyper_the_dragon)
+            controller.moveSprite(Hyper_the_dragon, 150, 0)
         })
     }
 })
@@ -2980,6 +2992,7 @@ let Robot_mini_001: Sprite = null
 let welcome_to_crystal_tundra: Sprite = null
 let hmmmmmmmmmmm = false
 let yo_what = false
+let Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = false
 let _2014nostalgia = false
 let megamanx2renefrence = 0
 let jumpcount = 0
@@ -3228,7 +3241,9 @@ let spawnDistance = 130
 jumpcount = 0
 let collectthonchad = 0
 megamanx2renefrence = 0
+let Edgy_looney_toons = 0
 _2014nostalgia = false
+Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = false
 yo_what = false
 let supersayianswagger = false
 hmmmmmmmmmmm = false
@@ -3951,7 +3966,6 @@ game.onUpdateInterval(1000, function () {
     john_pork.setVelocity(0, -50)
 })
 forever(function () {
-    music.play(music.createSong(hex`00a00004080a0200001c00010a006400f401640000040000000000000000000000000005000004840010001400012414001800012718001c00012a1c002000012520002400012724002800012a28002c0001252c003000012930003400012c34003800012738003c0001293c004000012c40004400012444004800012748004c00012a4c005000012550005400012754005800012a58005c0001255c006000012060006400012464006800012506001c00010a006400f401640000040000000000000000000000000000000002720010001400012414001800012718001c00012a1c002000012520002400012724002800012a28002c0001252c003000012930003400012c34003800012738003c0001293c004000012c40004400012444004800012748004c00012a4c005000012550005400012754005800012a58005c000125`), music.PlaybackMode.UntilDone)
     for (let index = 0; index < 4; index++) {
         music.playTone(330, music.beat(BeatFraction.Half))
         music.playTone(494, music.beat(BeatFraction.Half))
