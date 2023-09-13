@@ -1450,6 +1450,9 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
             Hyper_the_dragon.vy = -145
         }
     }
+    if (true == Theyusedoneofthesuitsinthebackandnownoneofthemareactingright) {
+        Hyper_the_dragon.vy = -145
+    }
     jumpcount += 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile113`, function (sprite, location) {
@@ -2530,6 +2533,15 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
     statusbar.value = 25
     info.setScore(0)
     info.changeLifeBy(-1)
+    Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = false
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = true
+        music.play(music.stringPlayable("F - G B C - B - ", 500), music.PlaybackMode.InBackground)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
     Hyper_the_dragon.setPosition(20, 199)
