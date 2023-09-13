@@ -2978,6 +2978,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, location) {
     Hyper_the_dragon.setPosition(20, 199)
     statusbar.value += -150
+    color.startFade(color.GrayScale, color.originalPalette)
     info.setScore(0)
 })
 let moving = false
