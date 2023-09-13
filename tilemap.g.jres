@@ -952,7 +952,7 @@
         "displayName": "myTile0"
     },
     "tile29": {
-        "data": "hwQQABAAAAAAAAAAAAAADgAAAADgAOAOAAAAD+AOvg4AAPD+4Ou7DgAP7+rvu70O8P6uqv6+2+vv6qrv6v++6+/+/v/+/+/r7+//7u/uv+vv7+/u7v/b6+/v7v//u93r7+/+AODbuw7v7g8A4Lu+DvDuDwDg6+AOAO/+AADuAA4A8P8PAOAAAA==",
+        "data": "hwQQABAAAAAAAAAAAAAADgAAAADgAOAOAAAACuAOvg4AAKCt4Ou7DgAK2tHqu70OoK0dEa2+2+va0RHa0aq+69qtraqtqurr2tqq3drduuva2trd3arb69ra3aqqu93r2tqtAODbuw7a3QoA4Lu+DqDdCgDg6+AOANqtAADuAA4AoKoKAOAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "myTile21"
