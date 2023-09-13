@@ -1452,6 +1452,9 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     if (true == Theyusedoneofthesuitsinthebackandnownoneofthemareactingright) {
         Hyper_the_dragon.vy = -145
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        music.powerUp.play()
     }
     jumpcount += 1
 })
@@ -2742,6 +2745,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.badguy001, function (sprite, oth
         effects.clearParticles(Hyper_the_dragon)
         sprites.destroy(otherSprite, effects.fire, 100)
         _2014nostalgia = false
+        Theyusedoneofthesuitsinthebackandnownoneofthemareactingright = false
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`radient shard0`, function (sprite, location) {
