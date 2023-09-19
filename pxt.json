@@ -17,11 +17,7 @@
         "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.0.1",
         "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3",
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
-        "sevenseg": "*",
         "color-coded-tilemap": "*",
-        "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0",
-        "corgio": "*",
-        "jacdac": "github:microsoft/pxt-jacdac#v1.9.11",
         "arcade-sprite-util": "pkg:arcade-sprite-util.json",
         "jacdac-braille-display": "github:microsoft/pxt-jacdac/braille-display#v1.9.11",
         "arcade-shader": "github:riknoll/arcade-shader#d2a2572906fdb68ff429f337e30606b069e688ea",
@@ -29,9 +25,7 @@
         "tilemaps": "github:microsoft/pxt-tilemaps#v1.12.0",
         "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.2.1",
         "pxt-camera-scroll": "github:blobbey2000/pxt-camera-scroll#v2.7.4",
-        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#c8b01b9d47f85a5133c786f1c026b1f376fe4285",
-        "edge-connector": "*",
-        "darts": "*"
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#c8b01b9d47f85a5133c786f1c026b1f376fe4285"
     },
     "files": [
         "main.blocks",
