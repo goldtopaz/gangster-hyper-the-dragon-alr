@@ -934,10 +934,16 @@
         "displayName": "myTile26"
     },
     "tile31": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////w8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAD/////DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "data": "hwQQABAAAAAA/wAAAADwD/C7D/D/AL/78Nv7LyL/2/vw2/vu7v7b+wC/+////7sPAPDrMzO7+wAA779eVb3vD/Dlv+0Vve/18OW/7RW97/UA779eVb3vDwDw6zMzu/sAAL/7////uw/w2/vu7v7b+/Db+y8i/9v78LsP8P8Av/sA/wAAAADwDw==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "myTile27"
+    },
+    "tile32": {
+        "data": "hwQQABAAAAAA/w8AAAD/D/Du/gAA8O7+8P7v///v//7w/vDq6vrw/gDvr+7uru8PAPDqpmbm+gAAr26oqGquD/DqhhEageb6AK9uqKhorg8A8OpqZur6AADvr+7uru8P8P7w6ur68P7w/u///+///vDu/gAA8O7+AP8PAAAA/w8AAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile101"
     },
     "level30": {
         "id": "level30",
@@ -1098,9 +1104,7 @@
             "myTiles.tile2",
             "myTiles.tile124",
             "myTiles.tile36",
-            "myTiles.tile22",
-            "myTiles.tile23",
-            "myTiles.tile31"
+            "myTiles.tile32"
         ],
         "displayName": "crystal tundra"
     },
